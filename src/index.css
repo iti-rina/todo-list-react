@@ -1,13 +1,109 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+* {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+*:focus {outline:none !important}
+
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 1152px;
+  height: 700px;
+  margin: 0 auto;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    align-self: center;
 }
+
+.header__img {
+    width: 74px;
+    height: 74px;
+}
+
+.header__title {
+    font-size: 64px;
+    color: #5E5E5E;
+    font-weight: bold;
+}
+
+.add-new-task-field {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+}
+
+.add-new-task-field__input-line {
+    caret-color: #B47AEA;
+    border: none;
+    appearance: none;
+    color: #B47AEA;
+}
+
+.add-new-task-field__input-line:focus {
+    border-color: black;
+}
+
+.add-new-task-field__input-line::placeholder {
+    color: #B47AEA;
+}
+
+.task-list {
+    list-style: none;
+    margin-top: 47px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.task-list__li {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.task-list__delete-task {
+    background-image: url("./assets/delete-btn.svg");
+    display: inline-block;
+    width: 30px;
+    height: 28px;
+    border: none;
+    background-color: inherit;
+}
+
+.task-list__task-checkbox {
+  transform:scale(2);
+  opacity:0.9;
+  cursor:pointer;
+}
+
+.task_selected {
+  text-decoration: line-through;
+}
+
+.add-new-task-field__add-btn {
+    background-image: url("./assets/add-task-icon.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    background-color: #B47AEA;
+    border-radius: 50%;
+    border: none;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+}
+
+
