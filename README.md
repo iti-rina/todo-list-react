@@ -1,12 +1,14 @@
-This repo contains the code for another ToDo-List.
-It is my first project that was developed using React library. I used the same styles as for the "todo-list-vanilla-JS" project.
+This repo contains the code for another ToDo-List. It is my first project that was developed using React library.\
+I used the same styles as for the "todo-list-vanilla-JS" project.
 
-##Stack:##
+![todo-list-interface](./docs/Interface.png?raw=true)
+
+## Stack:
 
 - React
 - CSS
 
-##To run the app: ##
+## To run the app:
 
 1. Install node (node version of the project: 16.17.1)
 2. Install dependencies: `npm install`
